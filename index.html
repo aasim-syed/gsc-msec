@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOOGLE STUDENTS CLUB || MSEC</title>
+    <link rel = "icon" href = 
+"g.jfif" 
+        type = "image/x-icon">
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="g.jfif" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">EVENTS</a>
+              </li>
+              <li>
+                <a href="#services" class="scroll-link">TEAM MEMBERS</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>GOOGLE STUDENTS CLUB</h1>
+          <p>
+            ALL EVENTS WILL BE UPDATES HERE!
+          </p>
+          <a href="https://www.youtube.com/channel/UCrFGjZE6iLcRwStNcNrsywA/about" id="btn2" onclick="redirect()" class="scroll-link btn btn-white">CHECK OUT YOUTUBE CHANNEL</a>
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>ALL THE UPCOMING <span>EVENTS WILL BE DISPLAYED HERE!</span></h2>
+      </div>
+    </section>
+    <!-- services -->
+    <section id="services" class="sect">
+      <div class="title">
+        <h2>MEET OUR <span>CLUB MEMBERS!</span></h2>     
+        
+      </div>
+       <div class="intro">
+        <ul >
+        <li><fieldset class="ob"><legend><h3>Vaishnavi Ayyappan</h3></legend><br><p class="lead">DSC LEAD<br>FINAL YEAR CSE!<br></p></fieldset></li>
+        <li><fieldset class="tl"><legend><h3>Subramaniya Nivash Palanichamy</h3></legend><br><p class="lead">MARKETING LEAD<br>FINAL YEAR CSE!<br></p></fieldset></li>                    
+        <li><fieldset class="tl"><legend><h3>Vigneshwar A S</h3></legend><br><p class="lead">EVENT MANAGMENT<br>FINAL YEAR EEE!<br></p></fieldset></li></ul>
+      </div>
+        <div class="intro"><ul><li><fieldset class="tl"><legend><h3>Avinash R</h3></legend><br><p class="lead">DSC LEAD<br>THIRD YEAR CSE!<br></p></fieldset></li>                    
+        <li> <fieldset class="tl"><legend><h3>Yogesh Waran S</h3></legend><br><p class="lead">THIRD YEAR CSE!<br></p></fieldset></li>                   
+        <li><fieldset class="tl"><legend><h3>Syed_Aasim A </h3></legend><br><p class="lead">UX/UI LEAD<br>THIRD YEAR CSE!<br></p></fieldset></li><br> </ul></div>
+      <div class="intro">
+         <ul>
+         <li><fieldset class="tl"><legend><h3>M.SHANMUGA SUNDARAESWARI</h3></legend><br><p class="lead">THIRD YEAR CSE!<br></p></fieldset></li> 
+         <li><fieldset class="tl"><legend><h3>S.ANJANA</h3></legend><br><p class="lead">THIRD YEAR CSE!<br></p></fieldset></li> 
+         <li><fieldset class="tl"><legend><h3>P.GOKILA</h3></legend><br><p class="lead">THIRD YEAR CSE!<br></p></fieldset></li> 
+           
+
+
+       </ul> </div> 
+        <div class="intro">
+         <ul>                  
+           <li><fieldset class="tl"><legend><h3>N.S<br>SREEVATHSAN</h3></legend><br><p class="lead">THIRD YEAR CSE!<br></p></fieldset></li> 
+         <li><fieldset class="tl"><legend><h3>Harrish Ragavendar S</h3></legend><br><p class="lead">SECOND YEAR CSE!<br></p></fieldset></li>                   
+         <li><fieldset class="tl"><legend><h3>Kavya_Sri A N</h3></legend><br><p class="lead">SECOND YEAR CSE!<br></p></fieldset></li></ul></div>
+                   
+             
+         
+       </ul>
+        </div>
+    </section>
+    <!-- contact -->
+    
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        copyright &copy; GOOGLE STUDENTS CLUB
+        <span id="date"></span>. all rights reserved<br>Made by <a style="color: #1FF34C;"href="https://github.com/aasim-syed">Aasim</a> with ❤ and Js,jQuery,css,html5
+      </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="app.js"></script>
+    <script type="text/javascript">
+    //First
+    $(document).ready(function() {
+    var docWidth = $('body').width(),
+    slidesWidth = $('section.section').width(),
+     rangeX = slidesWidth - docWidth,
+    $images = $('section.section');
+    $(document).on('mousemove', function(e) {
+    var mouseX = e.pageX,
+    offset = mouseX / docWidth * slidesWidth - mouseX / 1;
+
+  $images.css({
+    '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+    'transform': 'translate3d(' + -offset + 'px,0,0)'
+  });
+});
+});
+</script>
+<script type="text/javascript">document.getElementById("btn2").onclick = function () {
+        location.href = "https://www.youtube.com/channel/UCrFGjZE6iLcRwStNcNrsywA/about";
+    };</script>
+  </body>
+</html>
